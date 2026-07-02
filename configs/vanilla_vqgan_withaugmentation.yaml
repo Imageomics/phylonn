@@ -33,7 +33,7 @@ data:
     train:
       target: scripts.data.custom.CustomTrain
       params:
-        training_images_list_file: /fastscratch/elhamod/data/Fish/fish_train.txt
+        training_images_list_file: /users/PZS1151/llies/phylonn/dataset/fish_train.txt
         size: 256
         add_labels: true
         horizontalflip: true
@@ -42,7 +42,7 @@ data:
     validation:
       target: scripts.data.custom.CustomTest
       params:
-        test_images_list_file: /fastscratch/elhamod/data/Fish/fish_test.txt
+        test_images_list_file: /users/PZS1151/llies/phylonn/dataset/fish_test.txt
         size: 256
         add_labels: true
 

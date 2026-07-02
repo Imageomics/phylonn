@@ -1,16 +1,22 @@
-scripts/modules/losses/__pycache__/vqperceptual.cpython-38.pyc
-**__pycache__**
-logs/**
-slurm*
-**checkpoint.ipynb
-wandb/**
-taming3/**
-plot/**
-*.path
-*.log
-**events.out.tfevents.*
-lightning_logs/**
-analysis/figs/**
-**vanilla_vqgan_generated
-phylonn.egg-info*
-list.txt
+# Dataset - too large to commit
+
+dataset/
+
+
+
+# Logs and checkpoints - too large to commit
+
+logs/
+
+
+
+# Python cache
+
+__pycache__/
+
+*.pyc
+
+*.pyo
+
+.pytest_cache/
+
