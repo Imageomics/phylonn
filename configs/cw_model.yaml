@@ -65,3 +65,11 @@ data:
         size: 256
         add_labels: True
 
+
+
+lightning:
+
+  trainer:
+
+    max_epochs: 20
+

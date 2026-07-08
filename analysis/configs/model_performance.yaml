@@ -8,7 +8,7 @@ load_model: CW
 
 
 size: 256
-file_list_path: "/fastscratch/elhamod/data/Fish/fish_test.txt"
+file_list_path: "/users/PZS1151/llies/phylonn/dataset/fish_test.txt"
 
-ckpt_path: /fastscratch/mridul/kdd/cw_model/checkpoints/last.ckpt
-yaml_path: /fastscratch/mridul/kdd/cw_model/configs/2023-02-02T13-37-50-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-29T02-38-09_cw_baselinev1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-29T02-38-09_cw_baselinev1/configs/2026-06-29T02-38-09-project.yaml

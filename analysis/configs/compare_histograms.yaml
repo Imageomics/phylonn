@@ -1,5 +1,6 @@
+# NOTE: Requires unseen_species Phylo-NN training run (Section 6.3)
 size: 256
-file_list_path:  /fastscratch/elhamod/data/Fish/fish_test.txt
+file_list_path:  /users/PZS1151/llies/phylonn/dataset/fish_test.txt
 
 # species1: 'Lepomis megalotis'
 species1: 'Noturus miurus'

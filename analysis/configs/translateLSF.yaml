@@ -16,6 +16,6 @@ image_index2: 3407
 count: 15
 
 size: 256
-file_list_path: "/fastscratch/elhamod/data/Fish/fish_train.txt"
+file_list_path: "/users/PZS1151/llies/phylonn/dataset/fish_train.txt"
 
 
