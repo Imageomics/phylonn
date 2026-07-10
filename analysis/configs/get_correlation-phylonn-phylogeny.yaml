@@ -1,4 +1,4 @@
-path: /home/elhamod/projects/phylonn/results/PhyloNN/results_summary  # where to fine files in arrays1
+path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-26T11-24-38_phylonnv1/figs/results_summary  # where to find files in arrays1
 
 file_name: "phylonn phylo"
 
@@ -19,9 +19,9 @@ arrays1: [
 ]
 
 arrays2: [
-  /home/elhamod/projects/phylonn/analysis/phylo analysis/level3.csv,
-  /home/elhamod/projects/phylonn/analysis/phylo analysis/level0.csv,
-  /home/elhamod/projects/phylonn/analysis/phylo analysis/level1.csv,
-  /home/elhamod/projects/phylonn/analysis/phylo analysis/level2.csv,
-  /home/elhamod/projects/phylonn/analysis/phylo analysis/level3.csv,
+  /users/PZS1151/llies/phylonn/analysis/phylo analysis/level3.csv,
+  /users/PZS1151/llies/phylonn/analysis/phylo analysis/level0.csv,
+  /users/PZS1151/llies/phylonn/analysis/phylo analysis/level1.csv,
+  /users/PZS1151/llies/phylonn/analysis/phylo analysis/level2.csv,
+  /users/PZS1151/llies/phylonn/analysis/phylo analysis/level3.csv,
 ]
