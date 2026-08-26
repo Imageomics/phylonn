@@ -12,7 +12,7 @@
 
 #SBATCH --gpus-per-node=1
 
-#SBATCH --time=04:00:00
+#SBATCH --time=08:00:00
 
 #SBATCH --output=logs/analysis_%j.log
 
@@ -36,15 +36,15 @@ export WANDB_MODE=offline
 
 
 
-echo "Step 1: Generating code histograms..."
+echo "Step 1: Generating code histograms (skipping - already done)..."
 
-python analysis/code_histogram.py --config analysis/configs/code_histogram.yaml
+# python analysis/code_histogram.py --config analysis/configs/code_histogram.yaml
 
 
 
-echo "Step 2: Generating histogram distance matrices..."
+echo "Step 2: Generating histogram distance matrices (skipping - already done)..."
 
-python analysis/generate_histograms_matrix.py --config analysis/configs/generate_histograms_matrix.yaml
+# python analysis/generate_histograms_matrix.py --config analysis/configs/generate_histograms_matrix.yaml
 
 
 
@@ -57,6 +57,24 @@ python analysis/get_correlation.py --config analysis/configs/get_correlation-phy
 echo "Step 4: Computing correlation scores (phylogenetic)..."
 
 python analysis/get_correlation.py --config analysis/configs/get_correlation-phylonn-phylogeny.yaml
+
+
+
+echo "Step 5: Species-to-species image translation..."
+
+python analysis/specimen_translation.py --config analysis/configs/specimen_translation.yaml
+
+
+
+echo "Step 6: t-SNE plots..."
+
+python analysis/tsne.py --config analysis/configs/tsne.yaml
+
+
+
+echo "Step 7: Generating images with transformer..."
+
+python analysis/generate_with_transformer.py --config analysis/configs/generate_with_transformer.yaml
 
 
 

@@ -1,5 +1,5 @@
-ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-29T02-38-09_cw_baselinev1/checkpoints/last.ckpt
-yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-29T02-38-09_cw_baselinev1/configs/2026-06-29T02-38-09-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-07-12T08-44-13_cw_baselinev1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-07-12T08-44-13_cw_baselinev1/configs/2026-07-12T08-44-13-project.yaml
 
 DEVICE: 0
 

@@ -1,6 +1,6 @@
 # data
 size: 256
-file_list_path: # TODO: Run make_samples_vanilla_vqgan.py first to generate this list
+file_list_path: /users/PZS1151/llies/phylonn/dataset/fish_test.txt
 
 DEVICE: 0
 num_workers: 8

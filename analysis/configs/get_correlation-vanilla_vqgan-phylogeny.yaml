@@ -7,7 +7,7 @@ output_names: [
 ]
 
 arrays1: [
-  js-divergence.csv
+  js-divergence for phylo attributes heat_map.csv
 ]
 
 arrays2: [
