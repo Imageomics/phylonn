@@ -1,4 +1,4 @@
-path: /home/elhamod/projects/phylonn/results/vanilla_vqgan/results_summary # where to fine files in arrays1
+path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-22T14-29-58_vqgan_baselinev1/figs/results_summary  # where to find files in arrays1
 
 file_name: "js-divergence to phylo"
 
@@ -7,10 +7,10 @@ output_names: [
 ]
 
 arrays1: [
-  js-divergence.csv
+  js-divergence for phylo attributes heat_map.csv
 ]
 
 arrays2: [
-  /home/elhamod/projects/phylonn/analysis/phylo analysis/level3.csv,
+  /users/PZS1151/llies/phylonn/analysis/phylo analysis/level3.csv,
 ]
 

@@ -3,7 +3,7 @@ model:
   base_learning_rate: 4.5e-06
   project: Phylo-VQVAE-transformer-phase7
   target: scripts.models.cond_transformer.PhyloNN_transformer
-  posttraining_ckpt: /fastscratch/elhamod/logs/unseen_species/checkpoints/last.ckpt
+  posttraining_ckpt: /users/PZS1151/llies/phylonn/logs/logs/2026-06-26T11-24-38_phylonnv1/checkpoints/last.ckpt
   params:
     cond_stage_key: class
     top_k: 5
@@ -11,7 +11,7 @@ model:
       target: scripts.modules.transformer.mingpt.GPT
       params:
         vocab_size: 64 # size of codebook (number of possible codes)
-        block_size: 65 # 4*8 attr+4*8 nonattr+1 cond# codes predicted at once.
+        block_size: 161 # 4*8 attr+4*8 nonattr+1 cond# codes predicted at once.
         n_layer: 5
         n_head: 4
         n_embd: 16 #embedding dimensions for transformer. Does not have to be same as vqgan codebook
@@ -45,9 +45,9 @@ model:
           embed_dim: 16
           n_embed: 64
           n_phylolevels: 4
-          n_levels_non_attribute: 4
+          n_levels_non_attribute: 16
           codes_per_phylolevel: 8
-          n_phylo_channels: 94
+          n_phylo_channels: 64
           verbose: false
           ch: 128
           resolution: 16
@@ -74,7 +74,7 @@ model:
               phylogenyconfig:
                 target: scripts.data.phylogeny.Phylogeny
                 params:
-                  filePath: /fastscratch/elhamod/data/Fish
+                  filePath: /users/PZS1151/llies/phylonn/dataset
               verbose: false
           lossconfig_kernelorthogonality:
             target: scripts.modules.losses.orthogonalloss.OrthogonalLoss
@@ -102,12 +102,12 @@ data:
     train:
       target: scripts.data.custom.CustomTrain
       params:
-        training_images_list_file: /fastscratch/elhamod/data/Fish/fish_train.txt
+        training_images_list_file: /users/PZS1151/llies/phylonn/dataset/fish_train.txt
         size: 256
         add_labels: true
     validation:
       target: scripts.data.custom.CustomTest
       params:
-        test_images_list_file: /fastscratch/elhamod/data/Fish/fish_test.txt
+        test_images_list_file: /users/PZS1151/llies/phylonn/dataset/fish_test.txt
         size: 256
         add_labels: true

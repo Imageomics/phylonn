@@ -7,16 +7,16 @@ model_name: CW
 
 file_prefix: "CW"
 img_res: 256
-dataset_path: "/fastscratch/elhamod/data/Fish/fish_test.txt"
+dataset_path: "/users/PZS1151/llies/phylonn/dataset/fish_test.txt"
 
-ckpt_path: /fastscratch/mridul/kdd/cw_model/checkpoints/last.ckpt
-yaml_path: /fastscratch/mridul/kdd/cw_model/configs/2023-02-02T13-37-50-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-07-12T08-44-13_cw_baselinev1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-07-12T08-44-13_cw_baselinev1/configs/2026-07-12T08-44-13-project.yaml
 
 
 # Just set phylogeny_path to None when not applicable
 # phylogeny_path: None
 
-phylogeny_knn: /fastscratch/elhamod/data/Fish
+phylogeny_knn: /users/PZS1151/llies/phylonn/dataset
 
 which_tsne_plots: ['standard', 'knn']
 legend_labels: ['class']

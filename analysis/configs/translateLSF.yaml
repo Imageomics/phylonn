@@ -1,5 +1,5 @@
-ckpt_path: /home/harishbabu/projects/phylonn/logs/LSF/checkpoints/last.ckpt
-yaml_path: /home/harishbabu/projects/phylonn/logs/LSF/configs/2023-02-01T23-38-48-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-29T02-46-19_lsf_baselinev1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-29T02-46-19_lsf_baselinev1/configs/2026-06-29T02-46-19-project.yaml
 
 DEVICE: 0
 
@@ -16,6 +16,6 @@ image_index2: 3407
 count: 15
 
 size: 256
-file_list_path: "/fastscratch/elhamod/data/Fish/fish_train.txt"
+file_list_path: "/users/PZS1151/llies/phylonn/dataset/fish_train.txt"
 
 

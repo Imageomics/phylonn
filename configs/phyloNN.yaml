@@ -3,7 +3,7 @@ model:
   target: scripts.models.phyloautoencoder.PhyloVQVAE
   project: PhyloNN
   params:
-    ckpt_path: /fastscratch/elhamod/logs/vanilla_vqgan/checkpoints/last.ckpt
+    ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-22T14-29-58_vqgan_baselinev1/checkpoints/last.ckpt
     embed_dim: 256
     n_embed: 1024
     ddconfig:
@@ -58,7 +58,7 @@ model:
           phylogenyconfig:
             target: scripts.data.phylogeny.Phylogeny
             params:
-              filePath: /fastscratch/elhamod/data/Fish
+              filePath: /users/PZS1151/llies/phylonn/dataset
           verbose: false
       lossconfig_kernelorthogonality:
         target: scripts.modules.losses.orthogonalloss.OrthogonalLoss
@@ -79,13 +79,13 @@ data:
     train:
       target: scripts.data.custom.CustomTrain
       params:
-        training_images_list_file: /fastscratch/elhamod/data/Fish/fish_train.txt
+        training_images_list_file: /users/PZS1151/llies/phylonn/dataset/fish_train.txt
         size: 256
         add_labels: true
     validation:
       target: scripts.data.custom.CustomTest
       params:
-        test_images_list_file: /fastscratch/elhamod/data/Fish/fish_test.txt
+        test_images_list_file: /users/PZS1151/llies/phylonn/dataset/fish_test.txt
         size: 256
         add_labels: true
 

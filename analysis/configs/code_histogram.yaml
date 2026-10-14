@@ -1,5 +1,5 @@
 size: 256
-file_list_path:  /fastscratch/elhamod/data/Fish/fish_test.txt
+file_list_path: /users/PZS1151/llies/phylonn/dataset/fish_test.txt
 unique_skipped_labels: []
 
 DEVICE: 0
@@ -12,6 +12,6 @@ visualize_histograms: True # whether to plot the histpgrams
 
 ##############################
 
-ckpt_path: /fastscratch/elhamod/logs/PhyloNN/checkpoints/last.ckpt
-yaml_path: /fastscratch/elhamod/logs/PhyloNN/configs/2023-01-15T00-45-57-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-26T11-24-38_phylonnv1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-26T11-24-38_phylonnv1/configs/2026-06-26T11-24-38-project.yaml
 

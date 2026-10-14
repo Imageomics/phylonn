@@ -2,5 +2,5 @@ DEVICE: 0
 
 ##############################
 
-ckpt_path: /fastscratch/elhamod/logs/vanilla_vqgan/checkpoints/last.ckpt
-yaml_path: /fastscratch/elhamod/logs/vanilla_vqgan/configs/2023-01-09T18-13-38-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-22T14-29-58_vqgan_baselinev1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-22T14-29-58_vqgan_baselinev1/configs/2026-06-22T14-29-58-project.yaml

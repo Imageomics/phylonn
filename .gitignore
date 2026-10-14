@@ -14,3 +14,7 @@ analysis/figs/**
 **vanilla_vqgan_generated
 phylonn.egg-info*
 list.txt
+dataset/
+*.pyc
+*.pyo
+.pytest_cache/

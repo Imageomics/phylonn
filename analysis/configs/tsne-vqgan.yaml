@@ -8,17 +8,17 @@ model_name: VQGAN
 file_prefix: "vanilla-vqgan-test-set"
 
 img_res: 256
-dataset_path: "/fastscratch/elhamod/data/Fish/fish_test.txt"
+dataset_path: "/users/PZS1151/llies/phylonn/dataset/fish_test.txt"
 
-ckpt_path: /fastscratch/elhamod/logs/vanilla_vqgan/checkpoints/last.ckpt
-yaml_path: /fastscratch/elhamod/logs/vanilla_vqgan/configs/2023-01-09T18-13-38-project.yaml
+ckpt_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-22T14-29-58_vqgan_baselinev1/checkpoints/last.ckpt
+yaml_path: /users/PZS1151/llies/phylonn/logs/logs/2026-06-22T14-29-58_vqgan_baselinev1/configs/2026-06-22T14-29-58-project.yaml
 
 # Just set phylogeny_path to None when not applicable
 phylogeny_path: 
 # level: 0
 # phyloDistances_string: "0.77,0.5,0.33"
-# phylogeny_path: /fastscratch/elhamod/data/Fish
+# phylogeny_path: /users/PZS1151/llies/phylonn/dataset
 
-phylogeny_knn: /fastscratch/elhamod/data/Fish
+phylogeny_knn: /users/PZS1151/llies/phylonn/dataset
 
 which_tsne_plots: ['standard', 'knn']

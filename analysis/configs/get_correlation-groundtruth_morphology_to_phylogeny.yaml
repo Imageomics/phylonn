@@ -1,4 +1,5 @@
-path: /home/elhamod/projects/phylonn/analysis/phylo analysis # where to fine files in arrays1
+# NOTE: Requires precomputed baseline cosine distance CSVs — source script unknown
+path: /users/PZS1151/llies/phylonn/analysis/phylo analysis  # where to find files in arrays1
 
 file_name: "phylo-to-morph-groundtruth"
 
@@ -11,5 +12,5 @@ arrays1: [
 ]
 
 arrays2: [
-  /home/elhamod/projects/phylonn/analysis/ancestor analysis/level3.csv
+  /users/PZS1151/llies/phylonn/analysis/ancestor analysis/level3.csv
 ]

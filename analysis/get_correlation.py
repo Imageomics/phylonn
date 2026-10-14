@@ -25,6 +25,13 @@ def main(configs_yaml):
         
         df1 = df1.to_numpy()
         
+        # Drop species missing from ground truth (e.g. Lepisosteus osseus/platostomus)
+        if df1.shape[0] != df2.shape[0]:
+            n_drop = df1.shape[0] - df2.shape[0]
+            drop_idx = list(range(5, 5 + n_drop))
+            df1 = np.delete(df1, drop_idx, axis=0)
+            df1 = np.delete(df1, drop_idx, axis=1)
+        
         df1 = df1[np.triu_indices(df1.shape[0], k = 1)]
         df2 = df2[np.triu_indices(df2.shape[0], k = 1)]
         

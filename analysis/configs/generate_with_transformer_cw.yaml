@@ -1,5 +1,6 @@
+# NOTE: Requires cw_model_transformer training run - not yet completed
 size: 256
-file_list_path: "/fastscratch/elhamod/data/Fish/fish_test.txt"
+file_list_path: "/users/PZS1151/llies/phylonn/dataset/fish_test.txt"
 
 DEVICE: 0
 
